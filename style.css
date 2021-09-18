@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+}
+
+div{
+    border: 1px solid black;
+    width: 100%;
+    min-height: 30px;
+}
+
+.wrapper1{
+    border: 5px solid black;
+
+}
+
+.container1{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2d4059;
+}
+
+.container1-inner-block{
+    background-color: #ea5455;
+    margin: 10px ;
+}
+
+.container1-inner-block:first-child,
+.container1-inner-block:last-child{
+    flex-shrink: 2;
+}
+.container2{
+    display:flex;
+    background-color: #f07b3f;
+    padding: 0 10px;
+}
+
+.container2-inner-block{
+    background-color: #fed460;
+    margin: 10px 0;
+}
+
+.wrapper2{
+    display: flex;
+    margin-top: 10px;
+}
+
+.container3{
+    display: flex;
+    background-color: #4e4e6a;
+    padding: 0 10px;
+    flex-wrap: wrap;
+    border-width: 5px;
+   
+}
+.container3-inner-block{
+    background-color: #1f6cb0;
+    width: 48%;
+    margin: 1%;
+}
+.container3-inner-block:last-child{
+    background-color: #70a3c4;
+    width: 100%;
+}
+.container4{
+    display: flex;
+    flex-direction: column;
+    background-color: #f73f52;
+    padding: 0 10px;
+    border-width: 5px 5px 5px 0;
+    
+}
+.container4-inner-block{
+    background-color: #feea85;
+    margin: 5px 0;
+    
+}
+.wrapper3{
+    background-color: #e6af2e;
+    border-width: 5px;
+    margin-top: 10px;
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){ 
+
+    div{
+     min-height: 50px;
+    }
+    .wrapper2{
+     flex-direction: column;
+     
+ }
+    .container3,
+    .container4{
+        border: 10px solid yellow;
+    }
+
+    .container3{
+        border-bottom: 0;
+    }
+ }
+
+@media screen and (max-width: 767px){
+    div{
+        min-height: 60px;
+       }
+       .wrapper2{
+        flex-direction: column;
+        
+    }
+
+    .container3,
+    .container4{
+        border: 10px solid yellow;
+    }
+
+    .container1,
+    .container2,
+    .container3{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+    .container1{
+        padding: 0 10px;
+    }
+    .container1-inner-block{
+       
+        margin: 10px 0;
+    }
+    .container3-inner-block{
+       
+        width: 100%;
+        margin: 10px 0;
+        
+    }
+    .container3{
+        border-bottom: 0;
+    }
+}
