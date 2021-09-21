@@ -89,7 +89,7 @@ div{
 
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px){ 
+@media screen and (min-width: 451px) and (max-width: 1024px){ 
 
     div{
      min-height: 50px;
@@ -108,7 +108,7 @@ div{
     }
  }
 
-@media screen and (max-width: 479px){
+@media screen and (max-width: 450px){
     div{
         min-height: 60px;
        }
